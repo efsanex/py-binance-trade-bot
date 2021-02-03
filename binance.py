@@ -18,9 +18,7 @@ def fiyatBul(sym):
             return count
 
 def hesapla(anlıkFiyat, alımFiyat):
-    #degisim = (alımFiyat * 100) / anlıkFiyat
     degisim = ((anlıkFiyat - alımFiyat) / anlıkFiyat) * 100
-    #sonuc = 100 - degisim
     return degisim
 
 def do():
