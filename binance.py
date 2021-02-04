@@ -103,7 +103,7 @@ def tekLimit(sembol):
                 orderZ = binance.order_market_sell(symbol=orderS[0]['symbol'],quantity=alınanAdet)
                 print(orderZ)
 
-        send_text = 'https://api.telegram.org/bot1682375320:AAFOg9o6D8swAItoevo9b6WuqiQOk5Mt33U/sendMessage?chat_id=461723161&text='+ orderS[0]['symbol'] + sonuc
+        send_text = 'https://api.telegram.org/bot'+botToken+'/sendMessage?chat_id='+chatId+'&text='+ orderS[0]['symbol'] + sonuc
         response = requests.get(send_text)
         print(sonuc)
         
