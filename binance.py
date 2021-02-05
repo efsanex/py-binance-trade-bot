@@ -51,22 +51,16 @@ def tekLimit(sembol):
             if(minSatmaOranı == 1.00000000):
                 satılacakMiktar=round(alınanMiktar)
             if(minSatmaOranı == 0.10000000):
-                virguldenSonra = 1
                 satılacakMiktar= float("{:.1f}".format(alınanMiktar))
             if(minSatmaOranı == 0.01000000):
-                virguldenSonra = 2
                 satılacakMiktar=float("{:.2f}".format(alınanMiktar))
             if(minSatmaOranı == 0.00100000):
-                virguldenSonra = 3
                 satılacakMiktar=float("{:.3f}".format(alınanMiktar))
             if(minSatmaOranı == 0.00010000):
-                virguldenSonra = 3
                 satılacakMiktar=float("{:.4f}".format(alınanMiktar))
             if(minSatmaOranı == 0.00001000):
-                virguldenSonra = 3
                 satılacakMiktar=float("{:.5f}".format(alınanMiktar))
             if(minSatmaOranı == 0.00000100):
-                virguldenSonra = 3
                 satılacakMiktar=float("{:.6f}".format(alınanMiktar))
             
             sonuc = coinName+' % '+str(yuzdeDegisim)+' ve '+str(fiyatDeğişimi)+' dolar'
