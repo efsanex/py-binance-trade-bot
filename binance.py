@@ -38,7 +38,7 @@ def tekLimit(sembol):
         minSatmaOranı = float(minSatmaOranı['filters'][2]['minQty'])
         satınAlmaGecmisi = binance.get_my_trades(symbol=orderS[0]['symbol'], limit=1)
         if(satınAlmaGecmisi[0]['isBuyer'] == True):
-            alınanMiktar = float(satınAlmaGecmisi[0]['qty'])
+            alınanMiktar = float(satınAlmaGecmisi[0]['qty'])-float(satınAlmaGecmisi[0]['commission'])
             alımFiyatı = float(satınAlmaGecmisi[0]['price'])
             toplamFiyat = float(satınAlmaGecmisi[0]['quoteQty'])
 
